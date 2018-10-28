@@ -1,0 +1,21 @@
+{
+  "name": "jeffreyxiong",
+  "version": "1.0.0",
+  "description": "Personal website and portfolio of Jeffrey Xiong",
+  "author": "Jeffrey Xiong",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^5.2.2",
+    "typescript": "^3.1.3",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
