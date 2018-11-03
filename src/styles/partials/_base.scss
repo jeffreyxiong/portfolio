@@ -1,0 +1,68 @@
+html, body 
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0;
+	@include box-sizing(border-box);
+}
+section
+{
+	position: relative;
+}
+
+
+h1, h2, h3, h4
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin: 10px 0px;
+}
+h1
+{
+	font-size: 24pt;
+	font-weight: 700;
+}
+p, span
+{
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin: 15px 0px;
+}
+a
+{
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+nav
+{
+	@include flex();
+	@include flex-justify-content(space-between);
+	@include flex-align(center);
+	margin: 0px 8%;
+	margin-top: 40px;
+
+	.menu
+	{
+		width: 300px;
+		@include flex();
+		@include flex-justify-content(space-between);
+
+		a
+		{
+			color: $color-blue-30;
+			font-size: 12px;
+			@include transition(0.25s, ease-in-out);
+
+			&:hover
+			{
+				color: $color-grey-15;
+			}
+		}
+	}
+}

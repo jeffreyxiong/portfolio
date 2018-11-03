@@ -1,0 +1,75 @@
+.intro 
+{
+    @include flex();
+    @include flex-justify-content(center);
+    @include flex-align(center);
+    padding: 40px 8%;
+    position: relative;
+    // background-color: $color-purple-00;
+
+    object 
+    {
+        width: 100%;
+    }
+    
+    .title 
+    {
+        position: absolute;
+        top: 40px;
+        left: 8%;
+    }
+}
+.content 
+{
+    padding: 40px 8%;
+}
+.content-box
+{
+    padding-bottom: 30px;
+
+    span
+    {
+        display: block;
+    }
+}
+
+.title
+{
+    color: $color-blue-30;
+}
+.subtitle
+{
+    color: $color-purple-15;
+    font-weight: 400;
+}
+
+.about
+{
+    @include flex();
+    @include flex-justify-content(space-between);
+    // background-color: $color-pink-00;
+}
+.about-box:first-of-type
+{
+    flex: 2;
+    margin-right: 15px;
+}
+.about-box:last-of-type
+{
+    flex: 4;
+    margin-left: 15px;
+}
+
+.footer
+{
+    @include flex();
+    @include flex-direction(row-reverse);
+    @include flex-align(center);
+    height: 90px;
+    margin: 0 8%;
+    p
+    {
+        text-align: right;
+        font-size: 10px;
+    }
+}
