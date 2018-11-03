@@ -1,0 +1,9 @@
+// animate
+
+// transition
+@mixin transition($time, $animate, $property: all) {
+    -webkit-transition: $property $time $animate;
+    -o-transition: $property $time $animate;
+    transition: $property $time $animate;
+}
+
