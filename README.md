@@ -1,9 +1,9 @@
-# portfolio website
+## Portfolio
 
-## tools
+A simple portfolio website to exhibit illustration and design work, photography, and learn more web development.
 
-`Node.js` and `yarn`
-`webpack`
-`sass`
-`svg`
-
+### development
+* server: Running `express.js` framework for a simple `node.js` server
+* tools:
+    * using `sass` and `typescript`
+    * will be experimenting with `svg` animation and HTML5
