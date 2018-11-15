@@ -1,0 +1,51 @@
+header
+{
+    width: 300pt;
+    margin: 0 auto;
+    text-align: center;
+
+    .title
+    {
+        color: $color-blue-30;
+    }
+
+    span
+    {
+        font-size: 10pt;
+    }
+}
+
+.filter-menu 
+{
+	width: 400pt;
+	margin: 20pt auto;
+	@include flex();
+	@include flex-justify-content(space-around);
+	@include flex-align(center);
+
+    a 
+    {
+		border: 1pt solid;
+        border-color: white;
+        border-radius: 8pt;
+		padding: 5pt 10pt;
+		@include transition(0.5s, ease-out);
+
+        &:hover 
+        {
+			color: $color-red-30; 
+		}
+	}
+}
+
+.filter-selected 
+{
+    color: $color-red-30;
+    background-color: $color-pink-00 !important;
+
+    &:hover 
+    {
+        // color: $color-pink-15 !important;
+        background-color: white !important;
+    }
+}

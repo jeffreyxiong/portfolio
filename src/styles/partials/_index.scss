@@ -1,31 +1,32 @@
-.intro 
+header
 {
     @include flex();
-    @include flex-justify-content(center);
+    @include flex-direction(row-reverse);
     @include flex-align(center);
-    padding: 40px 8%;
-    position: relative;
-    // background-color: $color-purple-00;
-
+    padding: 40pt 8%;
+    z-index: 3;
+    position: absolute;
+    width: 84%;
     object 
     {
-        width: 100%;
+        width: 60%;
     }
-    
+
     .title 
     {
         position: absolute;
-        top: 40px;
+        top: 40pt;
         left: 8%;
     }
 }
+
 .content 
 {
-    padding: 40px 8%;
+    padding: 60pt 8%;
 }
 .content-box
 {
-    padding-bottom: 30px;
+    padding-bottom: 10pt;
 
     span
     {
@@ -36,6 +37,7 @@
 .title
 {
     color: $color-blue-30;
+    margin-top: 0pt;
 }
 .subtitle
 {
@@ -43,33 +45,27 @@
     font-weight: 400;
 }
 
+.wave
+{
+    width: 100%;
+    margin-top: 110pt;
+    margin-bottom: -5pt;
+}
+
 .about
 {
     @include flex();
     @include flex-justify-content(space-between);
-    // background-color: $color-pink-00;
+    background-color: $color-pink-00;
+    padding-top: 60pt;
 }
 .about-box:first-of-type
 {
     flex: 2;
-    margin-right: 15px;
+    margin-right: 15pt;
 }
 .about-box:last-of-type
 {
     flex: 4;
-    margin-left: 15px;
-}
-
-.footer
-{
-    @include flex();
-    @include flex-direction(row-reverse);
-    @include flex-align(center);
-    height: 90px;
-    margin: 0 8%;
-    p
-    {
-        text-align: right;
-        font-size: 10px;
-    }
+    margin-left: 15pt;
 }

@@ -5182,6 +5182,11 @@ which@1, which@^1.2.9:
   dependencies:
     isexe "^2.0.0"
 
+whiskers@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/whiskers/-/whiskers-0.4.0.tgz#c919deb51aa8e51803190c8fe69bba743347d6b5"
+  integrity sha1-yRnetRqo5RgDGQyP5pu6dDNH1rU=
+
 wide-align@^1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/wide-align/-/wide-align-1.1.3.tgz#ae074e6bdc0c14a431e804e624549c633b000457"

@@ -17,52 +17,83 @@ section
 h1, h2, h3, h4
 {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	margin: 10px 0px;
+	font-weight: 700;
+	margin: 10pt 0pt;
 }
 h1
 {
-	font-size: 24pt;
-	font-weight: 700;
+	font-size: 22pt;
 }
-p, span
+h2
 {
-	font-size: 14px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	margin: 15px 0px;
+	font-size:18pt;
 }
 a
 {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	font-weight: 400;
+
+	color: $color-blue-30;
+	font-size: 10pt;
+
+	@include transition(0.25s, ease-in-out);
+
+	&:hover
+	{
+		color: $color-pink-15;
+	}
 }
+p, span, p a
+{
+	font-size: 12pt;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin: 15pt 0pt;
+}
+
 
 nav
 {
 	@include flex();
 	@include flex-justify-content(space-between);
 	@include flex-align(center);
-	margin: 0px 8%;
-	margin-top: 40px;
+	@include box-sizing(border-box);
+	width: 100%;
+	padding: 0 8%;
+	height: 60pt;
+	position: fixed;
+	background-color: white;
+	z-index: 5;
 
 	.menu
 	{
-		width: 300px;
+		width: 240pt;
 		@include flex();
 		@include flex-justify-content(space-between);
-
-		a
-		{
-			color: $color-blue-30;
-			font-size: 12px;
-			@include transition(0.25s, ease-in-out);
-
-			&:hover
-			{
-				color: $color-grey-15;
-			}
-		}
 	}
+}
+.nav-item-selected
+{
+	color: $color-pink-15
+}
+
+.filler
+{
+    height: 60pt;
+}
+
+footer
+{
+    @include flex();
+    @include flex-direction(row-reverse);
+    @include flex-align(center);
+    height: 60pt;
+    margin: 0 8%;
+    p a
+    {
+        text-align: right;
+        font-size: 10pt;
+        font-weight: 300;
+    }
 }

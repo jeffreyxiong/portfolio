@@ -9,7 +9,7 @@ Jeffrey Xiong. (c) 2018
 <html lang="en">
 
 <head>
-    <title> Jeffrey Xiong </title>
+    <title> {title} </title>
     <!-- metadata -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +18,13 @@ Jeffrey Xiong. (c) 2018
 	<meta name="keywords" content="Jeffrey, Xiong, developer, web, designer, design, photographer, mobile">
     <meta name="description" content="">
     <!-- styles + fonts -->
-    <link href="/styles.css" rel="stylesheet" >
+    <link href="/{file}.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
 </head>
 
-
 <body>
-    
-<!-- 
-    navigation
--->
     
     <nav>
         <a href="/">
@@ -44,50 +41,15 @@ Jeffrey Xiong. (c) 2018
             <a href="/projects" class="nav-item">projects</a>
             <a href="/photography" class="nav-item">photography</a>
         </div>
-        
-	</nav>
-
-    <!-- 
-        illustration
-    -->
-    <section class="intro">
-        <object type="image/svg+xml" data="assets/shelf-01.svg"></object>
-
-        <div class="title">
-            <h1>Hi y'all, </h1>
-            <h1>I'm Jeffrey Xiong.</h1>
-            <span>I like creating things and capturing moments.</span>
-        </div>
-    </section>
+    </nav>
     
-    <!-- 
-        content
-    -->
+    <div class="filler"></div>
 
-	<section class="about content">
-        <div class="about-box">
-            <div class="content-box">
-                <span class="subtitle">currently,</span>
-                <span>full stack mobile engineer</span>
-            </div>
-            <div class="content-box">
-                <span class="subtitle">casually,</span>
-                <span>illustrator, designer, dumpling chef</span>
-            </div>
-        </div>
-        <div class="about-box">
-            <div class="content-box">
-                <span class="subtitle">about me,</span>
-                <p>I graduated from Rice University in 2018 with degrees in Computer Science and Cognitive Science.</p>
-                <p>In my spare time, you'll catch me doodling, exploring art museums, reading science fiction, or spilling iced coffee.</p>
-                <p>Passionate about usablility, human-centered design, and spicy food.</p>
-            </div>
-        </div>
-    </section>
+    {>body}
 
-    <section class="footer">
-        <p>LinkedIn  -   GitHub  -  Email</p>
-    </section>
+    <footer>
+        <p><a href="https://www.linkedin.com/in/jeffreyxiong"> LinkedIn </a> &bull; <a href="https://github.com/jeffreyxiong"> GitHub</a> &bull; <a href="mailto:jeffreywxiong@gmail.com"> Email </a></p>
+    <footer>
     
     <script src="app.js"></script>
 
