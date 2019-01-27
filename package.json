@@ -21,6 +21,7 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "aws-sdk": "^2.387.0",
     "express": "^4.16.4",
     "whiskers": "^0.4.0"
   }
